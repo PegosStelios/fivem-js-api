@@ -53,22 +53,7 @@ class fivemServer {
                     err(error);
                 });
         });
-    }
-    
-    // TODO: Make this work
-    // getVersion() {
-	// 	return new Promise((send, err) => {
-	// 		axios
-	// 			.get(`http://${this.ip}:${this.port}/info.json`, { timeout: this.options.timeout })
-	// 			.then(function(body) {
-	// 				let version = body.data;
-	// 				send(version);
-	// 			})
-	// 			.catch(function(error) {
-	// 				err(error);
-	// 			});
-	// 	});
-	// }	
+    }	
 }
 
 module.exports.fivemServer = fivemServer;
